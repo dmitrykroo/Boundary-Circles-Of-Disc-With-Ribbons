@@ -16,3 +16,5 @@ Here are some examples of inputs and outputs.
 **input:** 'zxyxyz'\
 **output:** The number of boundary components is 2
 
+There is a way to complete this task using BFS (https://en.wikipedia.org/wiki/Breadth-first_search) or other graph traversal algorithms to find the number of connected components of a graph representation of a disc with ribbons. This program does not use it.
+
