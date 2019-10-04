@@ -5,11 +5,11 @@ class XtraLetter:
         self.o = b2
 
 
-print('Enter the string: ')
+print('Enter a word in lowercase Latin letters, such that each letter occurs in it exactly twice: ')
 string = input()
 
 if string == '':
-    print('1 path - the disc itself')
+    print('The number of boundary components is 1')
     exit()
 
 letter_set = list(set(string))
@@ -40,19 +40,12 @@ for i, x in enumerate(xtra_string):
         begpoint = (x.l, 'o', i)
         point = (x.l, 'o', i)
 
-        print('{}-th circle: '.format(counter + 1))
-
         xtra_string[point[2]].o = True
         while True:
             nextstop = letter_dict[point[0]][0] if letter_dict[point[0]][0] != point[2] else letter_dict[point[0]][1]
 
             direction = 1 if nextstop > point[2] else -1
             point = (point[0], point[1], nextstop)
-
-            if point[1] == 'i':
-                print('Inner curve between \'{}\''.format(point[0]))
-            else:
-                print('Outer curve between \'{}\''.format(point[0]))
 
             if point[1] == 'o':
                 xtra_string[point[2]].o = True
@@ -63,8 +56,6 @@ for i, x in enumerate(xtra_string):
 
             nextindex = point[2] + change * direction
             if begflag and nextindex == len(xtra_string):
-                print('Connection through the other side of disc')
-                print('')
                 counter += 1
                 break
 
@@ -81,12 +72,10 @@ for i, x in enumerate(xtra_string):
 
             if point == begpoint:
                 counter += 1
-                print('')
                 break
     if not x.i:
         begpoint = (x.l, 'i', i)
         point = (x.l, 'i', i)
-        print('{}-th circle: '.format(counter+1))
 
         xtra_string[point[2]].o = True
         while True:
@@ -100,10 +89,6 @@ for i, x in enumerate(xtra_string):
             else:
                 xtra_string[point[2]].i = True
 
-            if point[1] == 'i':
-                print('Inner curve between \'{}\''.format(point[0]))
-            else:
-                print('Outer curve between \'{}\''.format(point[0]))
 
             change = -1 if point[1] == 'i' else 1
 
@@ -122,7 +107,7 @@ for i, x in enumerate(xtra_string):
 
             if point == begpoint:
                 counter += 1
-                print('')
+            #    print('')
                 break
 
-print('{} paths in total'.format(counter))
+print('The number of boundary components is {}'.format(counter))
