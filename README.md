@@ -18,3 +18,7 @@ Here are some examples of inputs and outputs.
 
 There is a way to complete this task using BFS (https://en.wikipedia.org/wiki/Breadth-first_search) or other graph traversal algorithms to find the number of connected components of a graph representation of a disc with ribbons. This program does not use it.
 
+An illustrated version of this "readme" is available in the main folder, named "readme_illustrated.pdf".
+
+The program is created as part of the "Discrete structures and algorithms in topology" course by A.B.Skopenkov. 
+Website of the course: https://www.mccme.ru/circles/oim/home/combtop13.htm
