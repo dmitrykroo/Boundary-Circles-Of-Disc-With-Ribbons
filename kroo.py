@@ -26,7 +26,7 @@ for i, letter in enumerate(string):
 
 for z in letter_dict:
     if letter_dict[z][0] * letter_dict[z][1] < 0:
-        print('Incorrect string')
+        print('Incorrect word')
         exit()
 
 xtra_string = [XtraLetter(l, False, False) for l in string]
