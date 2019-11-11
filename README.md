@@ -1,4 +1,7 @@
 # Boundary Circles Of Disc With Ribbons
+To test the program, you can use any online compiler, for example ideone.com.
+The programming language can be defined by the file extension.
+
 A program that finds boundary circles on a disc with ribbons (also referred to as a "ribbon graph" with 1 vertex and no twisted edges, https://en.wikipedia.org/wiki/Ribbon_graph). Example pictures of such discs with ribbons can be found in "discs.pdf".
 The program takes as input a word (string), consisting of lowercase Latin letters, such that each letter occurs in it exactly twice. If input is incorrect, the program outputs **'Incorrect word'**. The program outputs a line of the form **"The number of boundary components is N"**, where **N** is the number of boundary circles found. Complexity of this algorithm is **O(n)**, where **n** stands for length of an input string.
 
