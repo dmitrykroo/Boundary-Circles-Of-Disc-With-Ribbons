@@ -1,5 +1,5 @@
 # Boundary Circles Of Disc With Ribbons
-To test the program, you can use any online compiler, for example ideone.com.
+To test the program, you can use any online compiler, for example https://ideone.com.
 The programming language can be defined by the file extension.
 
 A program that finds boundary circles on a disc with ribbons (also referred to as a "ribbon graph" with 1 vertex and no twisted edges, https://en.wikipedia.org/wiki/Ribbon_graph). Example pictures of such discs with ribbons can be found in "discs.pdf".
